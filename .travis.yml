@@ -16,12 +16,14 @@ rvm:
   - 2.1
   - 2.2
   - ruby-head
-  - jruby
+  - jruby-1.7.24
   - rbx-2
+  - jruby-9.0.5.0
 
 matrix:
   allow_failures:
     - rvm: ruby-head
-    - rvm: jruby
+    - rvm: jruby-1.7.24
+    - rvm: jruby-9.0.5.0
     - rvm: rbx-2
   fast_finish: true
